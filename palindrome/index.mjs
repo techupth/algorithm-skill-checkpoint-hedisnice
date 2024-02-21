@@ -9,7 +9,7 @@
 // palindrome("abcdefg") === false
 
 const isPalindrome = (str) => {
-  const cleanStr = str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+  const cleanStr = str.replace(/[^A-Za-z0-9]/g);
   return cleanStr === cleanStr.split("").reverse().join("");
 };
 
@@ -18,6 +18,10 @@ console.log(isPalindrome("abba"));
 console.log(isPalindrome("radar"));
 console.log(isPalindrome("noon"));
 console.log(isPalindrome("level"));
+console.log(isPalindrome("2112"));
+console.log(isPalindrome("aba"));
+console.log(isPalindrome("aba"));
+console.log(isPalindrome("Fish hsif"));
 // false Palindrome
 console.log(isPalindrome("abcdefg"));
 console.log(isPalindrome("banana"));
